@@ -1,0 +1,174 @@
+Version 6.4.1
+* Stock reducing fixes
+
+Version 6.4.0
+* Improve error messages
+
+Version 6.3.0
+* Use redirect method for order-pay endpoints
+* Updated the core library
+
+Version 6.2.0
+* Fixed multiple refunds bug
+* Refunds: Use correct amount and vat_amount from order view in the backend
+* Removed composer checking
+* Invoice: capture by order items
+
+Version 6.1.0
+* Fix warnings on php8
+* Capturing fixes
+* Added "Full refund" button in WC admin
+* Updated the core library
+
+Version 6.0.0
+* Dedicated dialog for "payment-url"
+
+Version 5.0.0
+* Updated the core library
+
+Version 4.4.2
+* Improve data verification of transaction
+
+Version 4.4.1
+* Fixed transaction table bug
+
+Version 4.4.0
+* Add "Enable IP checking" option
+* Fix Transactions::import() notice
+
+Version 4.3.0
+* Add transaction link in WC admin
+* Add details of failed transactions
+
+Version 4.2.0
+* Add ip verification of incoming callbacks
+* Add `swedbank_gateway_ip_addresses` wp filter
+* Subscriptions: add payment meta and tokens from parent order
+* Partial capture and refund through the merchant admin backend
+
+Version 4.1.1
+* Fix plugin links
+* Fix wrong order status if customer fail with first payment attempt
+
+Version 4.1.0
+* Added the support form
+* Background queue fixes
+* Transaction processing on payment status checking
+* WC Subscriptions UI fixes in the admin backend
+* Fixed double order notifications/emails
+
+Version 4.0.2
+* Fixed subscription status problem when instant capture is on
+* Fixed Uncaught Error: Call to a member function getReference() on array
+
+Version 4.0.1
+* Gateway icon fixes
+
+Version 4.0.0
+* Updates of WooCommerce Subscriptions
+* Fixed php warnings
+* Remove usage of woocommerce_order_status_changed
+* Fixed api credentials validation
+* Updated core and sdk libraries
+
+Version 3.4.0
+* Implemented paymentUrl
+* Order status check fixes
+
+Version 3.3.0
+* Rename Merchant Token to Access Token
+* Swish: Fix phone number problem
+* Implemented Instant capture
+* Updates of Invoice payment method
+* Implemented Seamless View
+* Fixed: Payment.UserAgent: The UserAgent field is required
+* Fixed problem with recurrence token saving
+* Improved payment confirmation page (order-received page)
+* Skip transactions which have been processed before
+
+Version 3.2.0
+* Update the background queue processor
+* Fixed invoice capture
+* Fixed the problem of order status when AutoCapture is enabled
+
+Version 3.1.0
+* Use logging by the core
+* Fixed notices in the admin backend
+* Added dependencies checking
+* Use `updateTransactionsOnFailure()` of the core library
+* Fixed formatting of non-nordic phone numbers
+* Fixed inf loop when order get status failed
+* Option: Send billing/delivery addresses of payer to Swedbank Pay
+
+Version 3.0.1
+* Fixed "VERSION not found"
+
+Version 3.0.0
+* Use save instead of save_meta_data
+* Implemented MobilePay
+* Implemented Trustly
+* Add additional checks for transaction db operations
+* Disable plugin and show warning if WooCommerce is inactive
+* Switch positions of Token and Payee ID in settings
+* Implemented "International Telephone Input" feature
+* Fixes which related to refunds
+* Format the code with WordPress Standards
+
+Version 2.1.1
+* Fixed refund issue
+
+Version 2.1.0
+* Fix problems with order status changing
+* Add Migration script
+* Add Logo Url to options
+* Validate credentials in the admin backend
+* Fixes for WC Subscriptions
+* Admin notification fixes
+* Add a key protection for callbackUrl
+* Show hint if composer dependencies weren't installed
+* Replace fullname parser to adci/full-name-parser
+* Update WC tested metadata
+
+Version 2.0.0
+* Updates for Swedbank Pay
+* Implemented filters sb_get_payee_reference and sb_get_payee_reference_order
+* Improved errors handling. Problem Details for HTTP APIs (RFC 7807)
+* HTTPS: CA failback for Client
+* Add support of sequential order no
+* Invoice: add payeeInfo.payeeName
+* Add subsite option
+* Add payment action to Order view in admin backend
+* Show "payment method was updated" when change payment method
+* Implemented riskIndicator feature
+* Add minification suffix for css and js
+* Add ecom_only option in admin
+* Add order_id in metadata
+* Implemented Recurrence tokens feature
+* Use calculated vatAmount value instead of zero
+* Implemented "Reject cards" options
+* Add orderReference parameter
+* Add cardholder parameter
+* Remove no3DSecure parameter
+* Vipps: Remove direct method
+* Custom checkout icons in admin backend
+
+Version 1.3.0
+* Changed plugin slug
+* Changed plugin license
+* Improved code format
+* Fixed validate_payment_meta
+
+Version 1.2.0
+* Transactions processing in Background process
+* Add Terms & Conditions Url option
+* Update Swedish translations
+* Updates of PayEx Transaction Callback
+
+Version 1.1.0
+* Implemented: Tokenization
+* Implemented: WC Subscriptions support
+* Settings: AutoCapture mode
+* Integrated PayEx Client library
+
+Version 1.0.0
+* First release
